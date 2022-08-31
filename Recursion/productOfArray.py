@@ -1,5 +1,5 @@
-def productOfArray(nums,i):
-        if(i==len(nums)):return 1
-        return nums[i]*productOfArray(nums,i+1)
+def productOfArray(nums):
+        if(len(nums)==0):return 1
+        return nums[0]*productOfArray(nums[1:])
 
-print(productOfArray([1,2,3,4],0))
+print(productOfArray([1]))
